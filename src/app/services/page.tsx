@@ -18,7 +18,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="block md:hidden">
                     <Image
-                      src="/mobileCity1.jpg"
+                      src="/mobilecity1.jpg"
                       alt="aboutImage"
                       width={736}
                       height={1120}
