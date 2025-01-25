@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen pt-24">
+    <div className="min-h-screen pt-16">
       <main >
         {/* Main Company Overview Section */}
         <div className="relative bg-teal-500 shadow-md rounded-md mb-4">
