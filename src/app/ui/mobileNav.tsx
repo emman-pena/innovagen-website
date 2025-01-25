@@ -29,7 +29,7 @@ export default function CollapsibleNavBar() {
                       height={72}
                       priority
                     />
-              <div className='pe-4 text-2xl text-teal-500 font-medium'>InnovaGen</div>
+              <div className='pe-4 text-2xl text-teal-500 font-bold'>InnovaGen</div>
           </div>
         </Link>
 

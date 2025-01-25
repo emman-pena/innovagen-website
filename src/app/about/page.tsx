@@ -2,24 +2,28 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen pt-18">
+    <div className="min-h-screen pt-24">
       <main >
         {/* Main Company Overview Section */}
         <div className="relative bg-teal-500 shadow-md rounded-md mb-4">
-          <Image
-            src="/city1.jpg"
-            alt="aboutImage"
-            width={2064}
-            height={1152}
-            className="rounded-sm hidden md:block"
-          />
-          <Image
-            src="/mobileCity1.jpg"
-            alt="aboutImage"
-            width={736}
-            height={1120}
-            className="rounded-sm block md:hidden"
-          />
+          <div className="hidden md:block">
+            <Image
+              src="/city1.jpg"
+              alt="aboutImage"
+              width={2064}
+              height={1152}
+              className=""
+            />
+          </div>
+          <div className="block md:hidden">
+            <Image
+              src="/mobileCity1.jpg"
+              alt="aboutImage"
+              width={736}
+              height={1120}
+              className=""
+            />
+          </div>
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
           
@@ -77,7 +81,7 @@ export default function AboutPage() {
               At Innova Gen, we have a diverse and talented team of engineers,
               data scientists, and AI specialists. Our collaborative approach
               ensures that we’re always pushing the limits of what’s possible.
-              Led by Mohammad Zaid Naeem, the founder, and a passionate team, we
+              Led by Shajeer 3 Waqar, the founder, and a passionate team, we
               are on a mission to make AI accessible, practical, and
               life-changing.
             </p>

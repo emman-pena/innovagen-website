@@ -68,7 +68,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       
       <div className="flex flex-col items-center">
         <h1 className="md:text-4xl lg:text-6xl whitespace-nowrap">Artificial Intelligence Solutions</h1>
-        <p className="text-gray-300 md:text-xl lg:text-2xl mt-2">Welcome to Innova Gen, where we shape the future with cutting-edge AI solutions. Our innovative technologies are designed to transform industries and improve everyday life. From enhancing home security to revolutionizing mental health monitoring, we’re here to make AI work for you.</p>
+        <p className="text-gray-300 md:text-xl lg:text-2xl mt-2">Welcome to Innova Gen, where we shape the future with cutting-edge AI solutions. Our innovative technologies are designed to transform industries and improve everyday life.</p>
 
         <div>
           <Link

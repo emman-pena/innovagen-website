@@ -20,10 +20,10 @@ export default function NavBar() {
                       height={72}
                       priority
                     />
-              <div className='pe-4 text-2xl text-teal-500 font-medium'>InnovaGen</div>
+              <div className='pe-4 text-2xl text-teal-500 font-bold'>InnovaGen</div>
           </div>
         </Link>
-        <div className="flex grow flex-row items-center justify-end md:flex-row px-4">
+        <div className="flex grow flex-row items-center justify-end md:flex-row px-4 ms-4">
           <NavLinks /> 
         </div>
       

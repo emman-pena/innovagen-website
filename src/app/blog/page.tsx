@@ -2,26 +2,30 @@ import Image from "next/image";
 
 export default function BlogPage() {
   return (
-    <div className="bg-gray-100 min-h-screen pt-20 md:p-24">
+    <div className="bg-gray-100 min-h-screen pt-16 md:pt-20 md:p-24">
      
       <main className="">
         <section className="rounded-md shadow-md">
           {/* Main Company Overview Section */}
                   <div className="relative bg-teal-500 shadow-md rounded-md mb-4">
-                    <Image
-                      src="/city1.jpg"
-                      alt="aboutImage"
-                      width={2064}
-                      height={1152}
-                      className="rounded-sm hidden md:block"
-                    />
-                    <Image
-                      src="/mobileCity1.jpg"
-                      alt="aboutImage"
-                      width={736}
-                      height={1120}
-                      className="rounded-sm block md:hidden"
-                    />
+                    <div className="hidden md:block">
+                     <Image
+                        src="/city1.jpg"
+                        alt="aboutImage"
+                        width={2064}
+                        height={1152}
+                        className=""
+                        />
+                    </div>
+                    <div className="block md:hidden">
+                      <Image
+                        src="/mobileCity1.jpg"
+                        alt="aboutImage"
+                        width={736}
+                        height={1120}
+                        className=""
+                        />
+                    </div>
                     {/* Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
                     

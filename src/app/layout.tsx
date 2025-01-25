@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from '@/app/ui/nav'
 import CollapsibleNavBar from '@/app/ui/mobileNav'
+import Footer from '@/app/ui/footer'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +40,14 @@ export default function RootLayout({
           <CollapsibleNavBar />
         </div>
 
-        {children}
+        <div>
+          {children}
+        </div>
+
+        <div>
+          <Footer/>
+        </div>
+
       </body>
     </html>
   );

@@ -25,14 +25,14 @@ const products = [
 
 const Home: NextPage = () => {
   return (
-    <div className="grid min-h-screen pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid min-h-screen gap-16 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col h-full bg-gray-100">
         <div className="bg-teal-700 justify-center items-center">
           {/** Carousel */}
-          <div className="hidden md:block">
+          <div className="hidden md:block mt-16">
             <Carousel images={imagesDesktop} />
           </div>
-          <div className="block md:hidden">
+          <div className="block md:hidden mt-16">
             <MobileCarousel images={imagesMobile} />
           </div>
         </div>
@@ -49,16 +49,25 @@ const Home: NextPage = () => {
                 key={link.key}
                 href={link.href}
                 className={clsx(
-                  'flex flex-col rounded-md bg-white p-1 text-sm font-medium shadow-md'
+                  'flex flex-col items-center text-center rounded-md bg-white p-1 text-sm font-medium shadow-md'
                 )}
               >
-                <Image src={link.imageSrc} alt={link.name} width={500} height={250} className="rounded-sm"/>
+                <Image 
+                  src={link.imageSrc} 
+                  alt={link.name} 
+                  width={500} 
+                  height={250} 
+                  className="rounded-sm" 
+                />
                 <div className="p-4 space-y-4">
                   <p className="text-lg">{link.name}</p>
                   <p className="line-clamp-2 text-gray-500">{link.overview}</p>
-                  <p className="underline underline-offset-4 decoration-2 hover:decoration-teal-500 hover:text-teal-500">Learn more</p>
+                  <p className="underline underline-offset-4 decoration-2 hover:decoration-teal-500 hover:text-teal-500">
+                    Learn more
+                  </p>
                 </div>
               </Link>
+
               );
             })}
 
@@ -75,7 +84,7 @@ const Home: NextPage = () => {
 
         </div>
 
-        <div className="flex flex-col px-24 py-16">
+        <div className="flex flex-col px-4 md:px-24 py-16">
           <div className="bg-white rounded-md px-12 py-8 space-y-4 shadow-md">
           <h2 className="text-3xl">Get Started with AI Today</h2>
           <p>
@@ -88,57 +97,7 @@ const Home: NextPage = () => {
           >Contact Us</Link>
           </div>
         </div>
-        <div>
-
-        </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 };
