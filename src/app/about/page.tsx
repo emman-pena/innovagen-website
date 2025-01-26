@@ -81,7 +81,7 @@ export default function AboutPage() {
               At Innova Gen, we have a diverse and talented team of engineers,
               data scientists, and AI specialists. Our collaborative approach
               ensures that we’re always pushing the limits of what’s possible.
-              Led by Shajeer 3 Waqar, the founder, and a passionate team, we
+              Led by Shajeer Waqar, the founder, and a passionate team, we
               are on a mission to make AI accessible, practical, and
               life-changing.
             </p>
